@@ -1,0 +1,177 @@
+main section#amount div.amountBalanse {
+  display: block;
+  position: relative;
+  top: 10px;
+  left: 20%;
+  background-color: #94DAFF;
+  width: 60%;
+  height: 30%;
+  padding: 3% 0;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+}
+main section#amount div.amountBalanse h1 {
+  color: #2C3333;
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.2rem;
+}
+main section#operations nav.navOp {
+  margin: 10%;
+}
+main section#operations nav.navOp ul {
+  font-family: "Varela Round", sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+main section#operations nav.navOp ul li {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #99FEFF;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 35px;
+  width: 30%;
+  height: 70px;
+  padding: 8% 0;
+}
+main section#history h2 {
+  display: block;
+  position: relative;
+  left: 5%;
+  font-family: "Varela Round", sans-serif;
+  text-decoration: none;
+}
+main section#history nav ul {
+  position: relative;
+  left: 5%;
+  background-color: #94B3FD;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 90%;
+  list-style: none;
+}
+main section#casper {
+  display: none;
+}
+main section#casper div#clickContainer {
+  display: block;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  background-color: #B983FF;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+  padding: 5% 2%;
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+}
+main section#casper div#clickContainer h3 {
+  display: inline;
+  margin: 5% 0;
+  font-size: 2rem;
+}
+main section#casper div#clickContainer form input {
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+}
+main section#casper div#clickContainer form label {
+  display: inline-block;
+  margin: 10% 0 0 0;
+}
+main section#casper div#clickContainer form div#current_date {
+  margin: 10% 0;
+}
+main section#casper div#clickContainer form div#actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20% 0 0 0;
+}
+main section#casper div#clickContainer form div#actions div i {
+  color: white;
+  font-size: 1.5rem;
+  padding: 26% 0;
+}
+main section#casper div#clickContainer form div#actions div.confirmOpe {
+  text-align: center;
+  background-color: #14C38E;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 35px;
+  height: 50px;
+  width: 20%;
+}
+main section#casper div#clickContainer form div#actions div.denyOpe {
+  text-align: center;
+  background-color: salmon;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 35px;
+  height: 50px;
+  width: 20%;
+}
+@media screen and (min-width: 350px) {
+  main section#amount div.amountBalanse {
+    width: 60%;
+    height: 40%;
+    padding: 3% 0;
+    border-radius: 20px;
+  }
+  main section#amount div.amountBalanse h1 {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 350px) and (min-width: 600px) {
+  main section#amount div.amountBalanse h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 350px) and (min-width: 750px) {
+  main section#amount div.amountBalanse h1 {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (min-width: 350px) {
+  main section#operations nav.navOp ul li {
+    font-size: 1.5rem;
+    border-radius: 50px;
+    width: 30%;
+    height: 30%;
+    padding: 8% 0;
+  }
+}
+@media screen and (min-width: 350px) and (min-width: 560px) {
+  main section#operations nav.navOp ul li {
+    font-size: 1.5rem;
+    border-radius: 70px;
+    width: 25%;
+    height: 30%;
+    padding: 8% 0;
+  }
+}
+@media screen and (min-width: 350px) and (min-width: 800px) {
+  main section#operations nav.navOp ul li {
+    font-size: 1.5rem;
+    border-radius: 100px;
+    width: 25%;
+    height: 30%;
+    padding: 8% 0;
+  }
+}
+@media screen and (min-width: 350px) and (min-width: 1440px) {
+  main section#operations nav.navOp ul li {
+    font-size: 3rem;
+    border-radius: 100px;
+    width: 20%;
+    height: 30%;
+    padding: 6% 0;
+  }
+  main section#operations nav.navOp ul li i {
+    font-size: 2.6rem;
+  }
+}/*# sourceMappingURL=main.css.map */

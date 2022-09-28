@@ -1,0 +1,212 @@
+@import"variables.scss";
+
+main{
+    section#amount{
+        
+        div.amountBalanse{
+            display: block;
+            position: relative;
+            top: 10px;
+            left: 20%;
+            background-color: $amount;
+            width: 60%;
+            height: 30%;
+            padding: 3% 0;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 2px $sombra;
+            h1{
+                color: #2C3333;
+                font-family: $roboto;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    section#operations{
+        nav.navOp{
+            margin:10%;
+            ul{
+                font-family: $roboto;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                text-align: center;
+                justify-content: space-evenly;
+                list-style: none;
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    background-color: $operation;
+                    box-shadow: 0 0 10px 2px $sombra;
+                    border-radius: 35px;
+                    width: 30%;
+                    height: 70px;
+                    padding: 8% 0;
+                    
+                }
+            }
+        }
+    }
+    section#history{
+        h2{
+            display: block;
+            position: relative;
+            left: 5%;
+            font-family: $roboto;
+            text-decoration: none;
+        }
+        nav ul{
+            position: relative;
+            left: 5%;
+            background-color: $history;
+            box-shadow: 0 0 10px 2px $sombra;
+            border-radius: 10px;
+            width: 90%;
+            list-style: none;
+        }
+    }
+    section#casper{
+        display: none;
+        div#clickContainer{
+            display: block;
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+            background-color: $backgraund;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 2px $sombra;
+            padding: 5% 2%;
+            text-align: center;
+            font-family: $roboto;
+            h3{
+                display: inline;                
+                margin: 5% 0;
+                font-size: 2rem;
+                
+            }
+            form{
+                input{
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px 2px $sombra;
+                }
+                label{
+                    display: inline-block;
+                    margin:10% 0 0 0;
+                }
+                div#current_date{
+                    margin:10% 0;
+                }
+                div#actions{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    margin: 20% 0 0 0;
+                    div i{
+                        color: white;
+                        font-size: 1.5rem;
+                        padding: 26% 0;
+                    }                
+                    div.confirmOpe{
+                        text-align: center;
+                        background-color: #14C38E;                
+                        box-shadow: 0 0 10px 2px $sombra;
+                        border-radius: 35px;
+                        height: 50px;
+                        width: 20%;
+                    }
+                    div.denyOpe{
+                        text-align: center;
+                        background-color: salmon;                
+                        box-shadow: 0 0 10px 2px $sombra;
+                        border-radius: 35px;
+                        height: 50px;
+                        width: 20%;
+                    }
+                }
+            }
+           
+        }
+    }
+    @media screen and (min-width: 350px){
+        section#amount{
+        
+            div.amountBalanse{
+                width: 60%;
+                height: 40%;
+                padding: 3% 0;
+                border-radius: 20px;
+                h1{
+                    font-size: 1.6rem;
+                    @media screen and (min-width: 600px){
+                        font-size: 2rem;
+                    }
+                    @media screen and (min-width: 750px){
+                        font-size: 2.8rem;
+                    }
+                }
+            }
+        }
+        section#operations{
+            nav.navOp{
+                ul{
+                    li{
+                        font-size: 1.5rem;
+                        border-radius: 50px;
+                        width: 30%;
+                        height: 30%;
+                        padding: 8% 0;
+                        
+                    }
+                }
+            }
+            @media screen and (min-width: 560px){
+                nav.navOp{
+                    ul{
+                        li{
+                            font-size: 1.5rem;
+                            border-radius: 70px;
+                            width: 25%;
+                            height: 30%;
+                            padding: 8% 0;
+                            
+                        }
+                    }
+                }
+            }
+            @media screen and (min-width: 800px){
+                nav.navOp{
+                    ul{
+                        li{
+                            font-size: 1.5rem;
+                            border-radius: 100px;
+                            width: 25%;
+                            height: 30%;
+                            padding: 8% 0;
+                            
+                        }
+                    }
+                }
+            }
+            @media screen and (min-width: 1440px){
+                nav.navOp{
+                    ul{
+                        li{
+                            font-size: 3rem;
+                            border-radius: 100px;
+                            width: 20%;
+                            height: 30%;
+                            padding: 6% 0;
+                            i{                                
+                                font-size: 2.6rem;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

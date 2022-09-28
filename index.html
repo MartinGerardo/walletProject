@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <title>Wallet</title>
+    <script src="https://kit.fontawesome.com/d1cce6f79b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section id="amount">
+            <div class="amountBalanse">
+                <h1>$2000.00 ARS</h1>
+            </div>
+        </section>
+        <section id="operations">
+            <nav class="navOp">
+                <ul>
+                    <li id="entry"><i class="fa fa-solid fa-piggy-bank"></i> Ingreso</li>
+                    <li id="out"><i class="fa fa-solid fa-arrow-right"></i> Egreso</li>
+                </ul>
+            </nav>
+        </section>
+        <section id="history">
+            <h2>Ultimos Movimientos</h2>
+            <nav>
+                <ul>
+                    <li>dgfdg</li>
+                    <li>dfgdfg</li>
+                    <li>dfgfd</li>
+                    <li>dfgdf</li>
+                    <li>dfgfdg</li>
+                    <li>dfgdf</li>
+                    <li>dsfgfd</li>
+                    <li>dfgdrfg</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </nav>
+        </section>
+        <section id="casper">
+            <div id="clickContainer">
+                <h3 id="tittleCasper"></h3>
+                <form action="ingresa el monto">
+                    <label for="GET-num">Monto:</label> <br>
+                    <input type="number" name="monto" id="monto" placeholder="  Ej: 2000"> <br>
+                    <label for="GET-num">Concept:</label> <br>
+                    <input type="text" name="concepto" id="concepto" placeholder="  Ej: propinas">
+                    <div id="current_date"></div>
+                        <script>
+                        document.getElementById("current_date").innerHTML = Date();
+                        </script>
+                    <div id="actions">
+                        <div class="confirmOpe"><i class="fa fa-solid fa-check"></i></div>
+                        <div id="exit" class="denyOpe"><i class="fa fa-solid fa-ban"></i></div>
+                    </div>
+
+                </form>
+                
+            </div>
+        </section>
+    </main>
+    <script src="js/fun.js"></script> 
+</body>
+
+</html>
