@@ -30,8 +30,8 @@
         </section>
         <section id="history">
             <h2>Ultimos Movimientos</h2>
-            <nav>
-                <ul>
+            <nav id="navHitory">
+                <ul id="ulHitory">
                     <li>dgfdg</li>
                     <li>dfgdfg</li>
                     <li>dfgfd</li>
@@ -48,17 +48,21 @@
         <section id="casper">
             <div id="clickContainer">
                 <h3 id="tittleCasper"></h3>
-                <form action="ingresa el monto">
-                    <label for="GET-num">Monto:</label> <br>
-                    <input type="number" name="monto" id="monto" placeholder="  Ej: 2000"> <br>
-                    <label for="GET-num">Concept:</label> <br>
-                    <input type="text" name="concepto" id="concepto" placeholder="  Ej: propinas">
-                    <div id="current_date"></div>
+                <form id="formID" action="ingresa el monto">
+                    <label for="amountFR">Amount:</label> <br>
+                    <input type="number" name="amountFR" id="amountFR" placeholder="  Ej: 2000"> <br>
+                    
+                    <label for="concept">Concept:</label> <br>
+                    <input type="text" name="concept" id="concept" placeholder="  Ej: propinas">
+                    
+                    <div id="current_date">
                         <script>
-                        document.getElementById("current_date").innerHTML = Date();
+                            document.getElementById("current_date").innerHTML = Date();
                         </script>
+                    </div>
+                       
                     <div id="actions">
-                        <div class="confirmOpe"><i class="fa fa-solid fa-check"></i></div>
+                        <div id="confirmID" class="confirmOpe"><i class="fa fa-solid fa-check"></i></div>
                         <div id="exit" class="denyOpe"><i class="fa fa-solid fa-ban"></i></div>
                     </div>
 
