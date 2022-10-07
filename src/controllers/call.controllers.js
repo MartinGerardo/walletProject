@@ -1,3 +1,4 @@
+//coneccion con posgre
 const {Pool} = require('pg');
 const pool = new Pool({
     host: 'localhost',
@@ -6,12 +7,14 @@ const pool = new Pool({
     database: 'wallet',
     port: '5432'
 });
+
+
 // GET: Lista el historial de la Wallet
 const history = async (req, res) => {
-    const response = await pool.query('SELECT * FROM list_reg')
-    res.status(200).json(response.rows);
-    res.send('Historial');
-    console.log("Historia")
+ 
+    const response = await pool.query('SELECT * FROM regist')
+    res.status(200).json(response.rows);    
+     console.log(response.rows)
 
 }
 // POST: Ingreso de valores en la wallet
