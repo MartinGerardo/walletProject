@@ -5,7 +5,7 @@ const {history, entry, out, updateHistory} = require('../controllers/call.contro
 
 router.get('/wallet', history);
 
-router.post('/ingreso', entry);
+router.post('/entry', entry);
 
 router.put('/wallet', updateHistory);
 

@@ -7,7 +7,7 @@ const pool = new Pool({
     database: 'wallet',
     port: '5432'
 });
-
+let arrayTest = [];
 
 // GET: Lista el historial de la Wallet
 const history = async (req, res) => {
@@ -18,8 +18,13 @@ const history = async (req, res) => {
 
 }
 // POST: Ingreso de valores en la wallet
-const entry = (req, res)=>{
-    res.send('ingreso')
+let entry = (req, res)=>{
+let fondo = req.body;
+    const stringers = JSON.stringify(fondo);    
+    console.log(stringers);
+    // const response= await pool.query('INSERT INTO operations (amount, concept, daymonth, type_op) VALUES ($1, $2, $3, $4)', [amount, concept, daymonth, type_op])
+    // console.log(response); 
+    // res.send('operacion ingresada');
 };
 //UPDATE: Modifica el concepto del historial
 const updateHistory = (req, res) => {
